@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+.skin * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.skin *::before, .skin *::after {
+  box-sizing: border-box;
+}
+
+#buttons {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+#buttons > button {
+  margin-bottom: 10px;
+  padding: 4px 8px;
+}
+
+#demo2 {
+  display: none;
+}
+
+#demo {
+  position: fixed;
+  height: 50vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+#demo::-webkit-scrollbar {
+  display: none;
+}
+
+#html {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+}
+
+.mouth .up .lip::before {
+  content: '';
+  display: block;
+  width: 7px;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  background: #ffe600;
+}
+
+.mouth .up .lip.left::before {
+  right: -6px;
+}
+
+.mouth .up .lip.right::before {
+  left: -6px;
+}
+
+.mouth .down {
+  height: 170px;
+  position: absolute;
+  top: 5px;
+  width: 100%;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=style2.fdc1221e.css.map */
